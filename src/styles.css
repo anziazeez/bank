@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+    color: white;
+}
+form{
+    transition: .5s ease-in-out;
+}
+form:hover{
+    transform: scale(1.03);
+}
+body{
+    margin: 0;
+}
+.c{
+    background-color: rgb(17, 27, 57);
+    color: white;
+}
+.c:hover{
+    color:white ;
+    background-color:rgb(17, 27, 57);
+}

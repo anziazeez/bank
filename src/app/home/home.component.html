@@ -1,0 +1,118 @@
+
+        <!-- Responsive navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link ms-5" aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal">Check Balance</a></li>
+                        <li class="nav-item"><a class="nav-link ms-5" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Money Transfer</a></li>
+                        <li class="nav-item"><a class="nav-link ms-5" href="#!">Account Statements</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-user text-white"></i>
+                                </button>
+                                <ul class="dropdown-menu bg-dark">
+                                  <li><a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="dropdown-item text-info" href="#">View Profile</a></li>
+                                  <li><a class="dropdown-item text-info" href="#">Delete Account</a></li>
+                                  <li><a class="dropdown-item text-info" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url(https://i.postimg.cc/brw9QFYk/rsz-dcfcb9-2352176162754f898350deda842b77b1-mv2.jpg)">
+            <div class="text-center my-5">
+                <img style="height: 150px; width: 150px;" class="img-fluid rounded-circle mb-4" src="https://i.postimg.cc/MpSv76NC/494414.webp" alt="..." />
+                <h1 class="text-white fs-3 fw-bolder">Easy Banking</h1>
+                <p class="text-white-50 mb-0">make it easy</p>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-6">
+                <h1 class="ps-5 pt-5 text-white">S B I</h1>
+                <p class="p-5 text-secondary fs-5">State Bank of India (SBI) is an Indian multinational public sector bank and financial services statutory body headquartered in Mumbai, Maharashtra. SBI is the 48th largest bank in the world by total assets and ranked 221st in the Fortune Global 500 list of the world's biggest corporations of 2020, being the only Indian bank on the list. It is a public sector bank and the largest bank in India with a 23% market share by assets and a 25% share of the total loan and deposits market.</p>
+            </div>
+            <div class="col-6">
+                <img style="width: 60%;" class="mt-5" src="https://i.postimg.cc/yY6xh3qm/Banking-System-project.webp" alt="">
+            </div>
+        </div>
+        <!-- check balance(modal) -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-secondary">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-white">
+                  <h3>Hello <strong class="text-info">name</strong></h3>
+                  <div class="text-center">
+                  <img class="w-75" src="https://i.postimg.cc/QCc71PHx/23-Money-Transfer-How-to-Transfer-Money-Online-A-Complete-Guide.jpg" alt="">
+                  
+                </div>
+                <p>The available balance in account number 1234 is</p>
+                  <h4>Rs- 000 only</h4>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- money transfer(offcanvas) -->
+          <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header bg-dark">
+              <h3 class="offcanvas-title bg-dark w-100 text-white text-center"  id="offcanvasExampleLabel">Money Transfer</h3>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+              <img class="w-75" src="https://i.postimg.cc/QCc71PHx/23-Money-Transfer-How-to-Transfer-Money-Online-A-Complete-Guide.jpg" alt="">
+            </div>
+            <form action="">
+                <input class="form-control mt-5" type="text" placeholder="Recipient Account Number" aria-label="default input example">
+                <input class="form-control mt-3" type="text" placeholder="Amount to transfer" aria-label="default input example">
+                <input class="form-control mt-3" type="password" placeholder="Password" aria-label="default input example">
+                <button class="btn btn-outline-primary w-100 mt-3">Send Money</button>
+            </form>
+            </div>
+          </div>
+
+          <!-- view profile(modal) -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-dark">
+                  <h1 class="modal-title fs-2 text-center" id="exampleModalLabel">Profile Details</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-center">
+                    <img class="w-25" src="https://i.postimg.cc/d0nZ96f2/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="">
+                    <div class="row">
+                    <div class="col-6 mt-3 text-info text-center">
+                        <h5>User Name</h5>
+                        <hr>
+                        <h5>Account Number</h5>
+                    </div>
+                    <div class="col-6 mt-3 text-info text-center">
+                        <h5>abcd</h5>
+                        <hr>
+                        <h5>1234</h5>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
